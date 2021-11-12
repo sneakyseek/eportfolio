@@ -37,10 +37,10 @@ const Showcase = () => {
                                     and routing using component and page jsx files.
                                 </p>
                                 <div className="project__description--links">
-                                    <a href="#" className="project__description--link">
+                                    <a href="https://github.com/sneakyseek/react-book-store" target="_blank" className="project__description--link">
                                         <i><FontAwesomeIcon icon={['fab','github']}/></i>
                                     </a>
-                                    <a href="#" className="project__description--link">
+                                    <a href="https://mock-book-store.herokuapp.com/" target="_blank" className="project__description--link">
                                         <i><FontAwesomeIcon icon='link'/></i>
                                     </a>
                                 </div>
