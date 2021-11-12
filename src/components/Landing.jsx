@@ -2,7 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react"
 import personalLogo from '../assets/logopfp.jfif'
 import BackgroundEvent from "../components/BackgroundEvent.jsx";
-import resume from "../assets/resume.pdf"
+import resume from "../assets/Brian Hays Resume.pdf"
+import profilePicture from "../assets/photOfMeReact2.jpg";
 
 const Landing = () => {
 
@@ -28,7 +29,7 @@ const Landing = () => {
         <div className="text__img--wrapper">
             <figure className="landing__logo">
                 <div className="image__wrapper">
-                <img src={personalLogo} alt="" className="landing__logo--img" />
+                <img src={profilePicture} alt="" className="landing__logo--img" />
                 </div>
                 <div className="text__container">
                 <h1 className="landing__message">
