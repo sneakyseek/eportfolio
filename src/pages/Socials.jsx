@@ -5,12 +5,16 @@ import leftImage from "../assets/undraw_meet_the_team_re_4h08.svg"
 import rightImage from "../assets/undraw_connecting_teams_re_hno7.svg"
 import BackgroundEvent from "../components/BackgroundEvent.jsx";
 import { Link } from 'react-router-dom'
+import {Helmet} from 'react-helmet';
 
 const Socials = () => {
     return (
 
         <div className="socials">
             <BackgroundEvent/>
+            <Helmet>
+                <title>Brian Hays | Socials</title>
+            </Helmet>
             <img src={leftImage} alt="" className="left__image2" />
             <img src={rightImage} alt="" className="right__image2" />
 

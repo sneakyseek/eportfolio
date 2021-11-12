@@ -2,9 +2,14 @@ import React from 'react'
 import leftImage from '../assets/undraw_lost_online_re_upmy.svg'
 import rightImage from '../assets/undraw_design_notes_re_eklr.svg'
 import BackgroundEvent from "../components/BackgroundEvent.jsx";
+import {Helmet} from 'react-helmet';
 const Languages = () => {
     return (
+        
         <div className="languages">
+            <Helmet>
+                <title>Brian Hays | Stack</title>
+            </Helmet>
             <BackgroundEvent/>
             <img src={leftImage} alt="" className="left__image" />
             <img src={rightImage} alt="" className="right__image" />

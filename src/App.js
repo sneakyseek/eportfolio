@@ -10,6 +10,7 @@ import Contact from "./components/Contact.jsx"
 function App() {
   return (
     <Router>
+      <title>Brian Hays Eportfolio</title>
     <div className="App">
       <Nav/>
       <Route path="/" exact component={Home}/>
