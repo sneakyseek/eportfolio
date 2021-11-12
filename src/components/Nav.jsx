@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import logoImage from "../assets/logotransparent2.png"
 
 const Nav = () => {
     let contrastToggle = false;
@@ -16,6 +17,10 @@ const Nav = () => {
     }
     return (
         <div className="nav">
+            <figure className="image__wrapper">
+                <img src={logoImage} alt="" className="logo__image" />
+            </figure>
+            <div className="nav__link--wrapper">
             <ul className="navigation__links">
                 <Link to="/" className="navigation__link 
                                                 link__hover-effect 
@@ -45,6 +50,7 @@ const Nav = () => {
                     </button>
                 </li>
             </ul>
+            </div>
         </div>
     )
 }

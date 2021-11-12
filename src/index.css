@@ -41,18 +41,34 @@ NAV BAR
 
 */
 
-.navigation__links{
+.nav{
+  display: flex;
+  justify-content: space-between;
+}
+.dark-theme .logo__image{
+  filter: invert(1);
+}
+.nav__link--wrapper{
+  padding-right: 2vw;
+}
+.logo__image{
+  width: 200px;
+  height: auto;
+}
+.navigation__links,
+.nav__link{
   padding-top: 0.2vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.navigation__link{
+.navigation__link,
+.nav__link{
   text-decoration: none;
   color: black;
   font-weight: bold;
-  font-size: 24px;
-  padding: 20px 0;
+  font-size: 18px;
+  padding: 20px 10px;
 }
 .link__hover-effect{
   position:relative;
@@ -73,39 +89,21 @@ NAV BAR
   left: 0;
   width: 100%;
 }
-.nav__logo--img{
-  height: 100px;
-}
+
 /*
 
 LANDING PAGE
 
 */
+.landing__logo{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5vh;
+  padding-top: 10vh;
+}
 .landing__logo--img{
   animation: animate-profile-picture 800ms 200ms backwards;
 }
-.arrow__image{
-  position: absolute;
-  transform: rotate(45deg);
-  height: 200px;
-  left: 45vw;
-  bottom: 35vw;
-  transition: all 350ms ease;
-  animation: animate-arrow 3000ms 600ms infinite ease;
-}
-
-@keyframes animate-arrow{
-  0%{
-      transform: rotate(0);
-  }
-  50%{
-      transform: rotate(120deg);
-  }
-  100%{
-      transform: rotate(0);
-  }
-}
-
 @keyframes animate-profile-picture{
   0%{
       transform: scale(0);
@@ -119,6 +117,7 @@ LANDING PAGE
 }
 .landing__message{
   animation: fade-up 650ms 600ms backwards;
+  padding-bottom: 30px;
 }
 .landing__paragraph{
   animation: fade-up 650ms 800ms backwards;
@@ -147,7 +146,7 @@ LANDING PAGE
   position: absolute;
   font-size: 64px;
   top: 10vh;
-  left: 25vw;
+  left: 20vw;
   width: 100%;
   max-width: 1000px;
   padding: 0vw 10vh;
@@ -159,8 +158,8 @@ LANDING PAGE
 }
 .landing__logo--img{
   border-radius: 50%;
-  width: 252px;
-  height: 252px;
+  width: 300px;
+  height: 300px;
 }
 .contact__button{
   width: 70px;
@@ -190,8 +189,13 @@ LANDING PAGE
   max-width: 450px;
   font-weight: bold;
 }
+.text__container{
+  display: flex;
+  flex-direction: column;
+  padding-left: 5vw;
+}
 .social__list{
-  padding-top: 12px;
+  padding-top: 20px;
 }
 .social__link{
   background-color: #804EAD;
@@ -215,28 +219,39 @@ PROJECTS
 */
 .project{
   animation: fade-up 650ms 800ms backwards;
+  display : flex;
+  justify-content: center;
+}
+.top__group{
+  display: flex;
+  flex-direction: row;
 }
 .planet__image{
   position: absolute;
   height: 90vh;
   width: 90vw;
   top: 30vh;
-  left: 8vw;
+  left: 5vw;
   animation: fade-in 700ms 550ms backwards;
 }
-
 .project__shell--title{
   padding-top: 5vh;
   padding-bottom: 5vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 40px;
   font-weight: bold;
   animation: fade-up 650ms 800ms backwards;
+  position: relative;
 }
 .project__column--wrapper{
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  flex-direction: column;
+  /* position: absolute;
+  height: auto;
+  left: 25vw; */
 }
 .section__title{
   text-align:center;
@@ -247,6 +262,7 @@ PROJECTS
 .project__img{
   width: 100%;
   transition: all 600ms ease;
+  object-fit: contain;
 }
 
 .project__wrapper{
@@ -257,6 +273,8 @@ PROJECTS
   margin-bottom: 200px;
   margin-right: 100px;
   margin-left: 100px;
+  width: 50vw;
+  height: auto;
 }
 .project__wrapper:hover .project__description{
   opacity: 1;
@@ -481,7 +499,7 @@ SOCIALS
 
 */
 .social__container{
-  position: absolute;
+  position: fixed;
   z-index: 100;
   width: 50vw;
   height: 60vh;
@@ -561,7 +579,7 @@ SOCIALS
 .left__image2{
   z-index: -100;
   position: fixed;
-  top: 35vh;
+  top: 27vh;
   left: 10vw;
   height: 700px;
   transition: all ease 350ms;
@@ -570,7 +588,7 @@ SOCIALS
 .right__image2{
   z-index: -100;
   position: fixed;
-  top: 35vh;
+  top: 27vh;
   left: 57vw;
   transition: all ease 350ms;
   animation: fade-in 500ms 550ms backwards;
@@ -985,6 +1003,20 @@ SCALING
     display: flex;
     flex-direction: column;
   }
+  .image__wrapper{
+    padding-left: 5vw;
+  }
+  .landing__logo{
+    display: flex;
+    flex-direction: column;
+  }
+  .landing__paragraph{
+    width: 1000px;
+  }
+  .landing__logo--img{
+    width: 300px;
+    height: 300px;
+  }
 }
 @media(max-width: 620px){
   .project__shell--title{
@@ -1065,6 +1097,27 @@ SCALING
       top: 30vh;
       left: 25vw;
     }
+}
+@media( max-width: 2000px){
+  .left__image{
+    width: 700px;
+  }
+  .right__image{
+    width: 700px;
+  }
+  .left__image2{
+    left: 8vw;
+  }
+  .right__image2{
+    left: 55vw;
+  }
+  .pillarOne,
+  .pillarThree{
+    top: 67vh;
+  }
+  .pillarTwo{
+    top: 57vh;
+  }
 }
 
 

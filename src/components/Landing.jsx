@@ -27,22 +27,25 @@ const Landing = () => {
         <div className="landing">
         <div className="text__img--wrapper">
             <figure className="landing__logo">
+                <div className="image__wrapper">
                 <img src={personalLogo} alt="" className="landing__logo--img" />
+                </div>
+                <div className="text__container">
                 <h1 className="landing__message">
                 Good <span className="purple">{getTime()}!</span>
-            </h1>
-            </figure>
-            <p className="landing__paragraph">
+                </h1>
+                <p className="landing__paragraph">
                 My name is Brian Hays. I am a Junior at <span className="purple">Virginia Tech</span> studying Computer Science.
                 In my spare time, I <span className="purple">freelance</span> and study as a <span className="purple">frontend developer. </span> 
                 I enjoy creating aesthetic, performant, and <span className="purple">enjoyable experiences</span> for users.
-            </p>
-            <div className="social__list">
-
-            <a href={resume} class="social__link click" target="_blank">
-                <FontAwesomeIcon icon="file-pdf"></FontAwesomeIcon>
-            </a>
-            </div>
+                </p>
+                <div className="social__list">
+                <a href={resume} class="social__link click" target="_blank">
+                    <FontAwesomeIcon icon="file-pdf"></FontAwesomeIcon>
+                </a>
+                </div>
+                </div>
+            </figure>                
         </div>
         </div>
         </>

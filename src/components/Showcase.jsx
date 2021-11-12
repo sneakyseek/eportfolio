@@ -11,17 +11,14 @@ const Showcase = () => {
     return (
         <div className="projects">
                 <BackgroundEvent/>
-                <a href="#projects" class="scroll">
-            <div class="scroll__icon click"></div>
-        </a>
+            <div class="scroll__icon scroll"></div>
                 <img src={starsPic} alt="" className="planet__image" />
                 <h1 className="project__shell--title">
-                    <figure>
+                    <figure className="project__title">
                     Have a look at some of my <span className="purple">Projects!</span>
                     </figure>
                 </h1>
             <div className="project__column--wrapper">
-            <figure className="showcase__shell--left">
                 <ul className="project__list">
                     <li className="project">
                         <div className="project__wrapper">
@@ -50,10 +47,6 @@ const Showcase = () => {
                             </div>
                         </div>
                     </li>
-                </ul>
-            </figure>
-            <figure className="showcase__shell--right">
-                <ul className="project__list">
                     <li className="project">
                         <div className="project__wrapper">
                             <img src={eportProjectPicture} className="project__img" alt=""></img>
@@ -108,7 +101,6 @@ const Showcase = () => {
                         </div>
                     </li>
                 </ul>
-            </figure>
             </div>
             </div>
         )

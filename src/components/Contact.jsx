@@ -98,15 +98,15 @@ const Contact = () => {
                 <form id="contact__form" onSubmit={contact}>
                     <div className="form__item">
                         <label className="form__item--label">Name</label>
-                        <input className="input" name="user_name" type="text" ></input>
+                        <input className="input" name="user_name" type="text" required></input>
                     </div>
                     <div className="form__item">
                         <label className="form__item--label">E-mail</label>
-                        <input className="input" name="user_email" type="email" ></input>
+                        <input className="input" name="user_email" type="email" required></input>
                     </div>
                     <div className="form__item">
                         <label className="form__item--label">Message</label>
-                        <textarea className="input" name="message" type="text" ></textarea>
+                        <textarea className="input" name="message" type="text" required></textarea>
                     </div>
                     <button id="contact__submit" className="form__submit">
                         Send it my way
