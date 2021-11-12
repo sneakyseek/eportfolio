@@ -95,6 +95,10 @@ NAV BAR
 LANDING PAGE
 
 */
+.landing{
+  display: flex;
+  justify-content: center;
+}
 .landing__logo{
   display: flex;
   flex-direction: row;
@@ -146,15 +150,12 @@ LANDING PAGE
   position: absolute;
   font-size: 64px;
   top: 10vh;
-  left: 20vw;
   width: 100%;
   max-width: 1000px;
-  padding: 0vw 10vh;
 }
 .landing__logo{
   max-width: 400px;
   max-height: auto;
-  padding-right: 25vw;
 }
 .landing__logo--img{
   border-radius: 50%;
