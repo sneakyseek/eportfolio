@@ -61,29 +61,29 @@ const Languages = () => {
                 </h1>
             </div>
             <div class="technology__section">
-                <figure class="language__section--language">
-                    <div className="language__image--wrapper">
-                    <img class="language--img" src="https://cdn0.iconfinder.com/data/icons/flat-round-system/512/java-256.png" alt=""></img>
-                    </div>
-                    <span class="language__name">Java</span>
-                </figure>
-                <figure class="language__section--language">
-                    <div className="language__image--wrapper">
-                    <img class="language--img" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-256.png" alt=""></img>
-                    </div>
-                    <span class="language__name">Python</span>
-                </figure>
+                    <figure class="language__section--language">
+                        <div className="language__image--wrapper">
+                        <img class="language--img" src="https://cdn0.iconfinder.com/data/icons/flat-round-system/512/java-256.png" alt=""></img>
+                        </div>
+                        <span class="language__name">Java</span>
+                    </figure>
+                    <figure class="language__section--language">
+                        <div className="language__image--wrapper">
+                        <img class="language--img" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-256.png" alt=""></img>
+                        </div>
+                        <span class="language__name">Python</span>
+                    </figure>
             </div>
-            <div className="language__para">
-            <p className="lang__paragraph stack__para">
-                As a <span className="purple">Computer Science student at Virginia Tech</span>. I have <br/> been able to continue
-                development of <span className="purple">key skills</span> in Java, Python, <br/> and various other key languages
-                in the software development space. <br/> I am <span className="purple">fully comfortable</span> integrating  these key
-                languages into any <br/> software development project.
-            </p>
+                <div className="language__para">
+                    <p className="lang__paragraph stack__para">
+                        As a <span className="purple">Computer Science student at Virginia Tech</span>. I have <br/> been able to continue
+                        development of <span className="purple">key skills</span> in Java, Python, <br/> and various other key languages
+                        in the software development space. <br/> I am <span className="purple">fully comfortable</span> integrating  these key
+                        languages into any <br/> software development project.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
     )
 }
 
