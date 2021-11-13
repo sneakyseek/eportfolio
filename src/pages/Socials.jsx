@@ -26,17 +26,20 @@ const Socials = () => {
             <img src={pillar} alt="" className="pillar pillarOne" />
             <img src={pillar} alt="" className="pillar pillarTwo" />
             <img src={pillar} alt="" className="pillar pillarThree" />
-            <a href="https://www.linkedin.com/in/brian-hays-34476621b/" target="_blank">
+            <a href="https://www.linkedin.com/in/brian-hays-34476621b/" target="_blank"
+            className="social__a">
             <button className="social__button linkedin">
                 <i><FontAwesomeIcon icon={['fab','linkedin']} className="icon"/></i>
             </button>
             </a>
-            <a href="https://github.com/bchayss" target="_blank" className="github__a">
+            <a href="https://github.com/bchayss" target="_blank" className="github__a"
+            className="social__a">
             <button className="social__button github">
                 <i><FontAwesomeIcon icon={['fab','github']} className="icon"/></i>
             </button>
             </a>
-            <a href="https://vt.joinhandshake.com/users/23219433" target="_blank">
+            <a href="https://vt.joinhandshake.com/users/23219433" target="_blank"
+            className="social__a">
             <button className="social__button handshake">
                 <i><FontAwesomeIcon icon={['fas', 'handshake']} className="icon"/></i>
             </button>

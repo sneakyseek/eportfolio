@@ -35,11 +35,19 @@ button{
   color: #7342d6;
 }
 
+
+
+
+
 /*
 
 NAV BAR
 
 */
+
+
+
+
 
 .nav{
   display: flex;
@@ -94,11 +102,20 @@ NAV BAR
   width: 100%;
 }
 
+
+
+
+
 /*
 
 LANDING PAGE
 
 */
+
+
+
+
+
 .landing{
   display: flex;
   justify-content: center;
@@ -217,11 +234,21 @@ LANDING PAGE
   animation: fade-up 650ms 950ms backwards;
 }
 
+
+
+
+
+
 /*
 
 PROJECTS
 
 */
+
+
+
+
+
 .project{
   animation: fade-up 650ms 800ms backwards;
   display : flex;
@@ -356,11 +383,24 @@ PROJECTS
   }
 }
 
+
+
+
+
 /*
 
-LANGUAGES
+STACK
 
 */
+
+
+
+
+
+.language__stack--header,
+.tech__stack--header{
+  text-align: center;
+}
 .languages{
   padding-top: 15vh;
   display: flex;
@@ -380,14 +420,16 @@ LANGUAGES
 .tech__paragraph{
   text-align: left;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1vw;
   line-height: 35px;
+  max-width: 90%;
 }
 .lang__paragraph{
   text-align: left;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1vw;
   line-height: 35px;
+  max-width: 90%;
 }
 .tech__stack{
   font-weight: bold;
@@ -400,16 +442,17 @@ LANGUAGES
   justify-content: center;
 }
 .language__section--language{
-  width: 10%;
+  width: 15%;
   padding: 6px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   transition: all 300ms ease;
 }
 .language--img{
-  width: 100%;
+  width: 4vw;
 }
 .language__section--language:hover{
   filter: brightness(80%);
@@ -427,15 +470,10 @@ LANGUAGES
 .language__section{
   display: flex;
   justify-content: center;
-  align-content: center;
 }
 .technology__section{
   display: flex;
   justify-content: center;
-}
-.language--img{
-  padding-right: 10px;
-  padding-left: 10px;
 }
 
 /*
@@ -520,8 +558,8 @@ SOCIALS
   animation: fade-in 1000ms 950ms backwards;
 }
 .social__button{
-  width: 200px;
-  height: 200px;
+  width: 10vw;
+  height: 10vw;
   font-size: 64px;
   border-radius: 50%;
   border: none;
@@ -555,7 +593,7 @@ SOCIALS
   transform: scale(1.1);
 }
 .pillar{
-  width: 200px;
+  width: 10vw;
   height: auto;
   transition: all ease 350ms;
   animation: fade-up 650ms 1200ms backwards;
@@ -579,7 +617,7 @@ SOCIALS
   position: fixed;
   top: 15vh;
   font-weight: bold;
-  font-size: 45px;
+  font-size: 2vw;
   text-align: center;
 }
 .left__image2{
@@ -722,11 +760,20 @@ p{
     left: 0;
     width: 100%;
 }
+
+
+
+
+
 /* 
 
 NAVIGATION 
 
 */
+
+
+
+
 
 .nav,
 .landing,
@@ -747,11 +794,19 @@ NAVIGATION
     transition: all 300ms;
 }
 
+
+
+
+
 /*
 
     MODAL
 
 */
+
+
+
+
 
 .modal{
     position: absolute;
@@ -911,25 +966,23 @@ NAVIGATION
     font-size: 36px;
     z-index: 100;
 }
+
+
+
+
 /*
 SCALING
 */
+
+
+
+
+
 @media(max-width: 1600px){
   .languages{
+    display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-  }
-  .left__container{
-    position: relative;
-    width: 100%;
-    top: 1;
-    left: 0;
-  }
-  .right__container{
-    position: relative;
-    width: 100%;
-    top: 0;
-    left: 0;
   }
   .right__image{
     display: none;
@@ -1047,6 +1100,7 @@ SCALING
     }
     .social__container{
       width: 100%;
+      justify-content: center;
     }
     .github,
     .linkedin,
@@ -1076,16 +1130,16 @@ SCALING
     text-align: center;
   }
 }
-@media (max-width: 1615px){
+@media (max-width: 1600px){
     .left__image2,
     .pillar,
     .right__image2{
       display: none;
     }
     .social__button{
-      width: 150px;
-      height: 150px;
-      font-size: 48px;
+      width: 8vw;
+      height: 8vw;
+      font-size: 3vw;
     }
     .linkedin{
       top: 38vh;
@@ -1162,11 +1216,17 @@ SCALING
   .dark-theme .social__button{
     filter: invert(1);
   }
-  .social__container{
+  .socials{
     display: flex;
     justify-content: center;
+    align-items: center;
+  }
+  .social__container{
     border-radius: 0%;
     box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .dark-theme .social__container{
     background-color: #242424;
@@ -1176,10 +1236,10 @@ SCALING
     font-size: 18px;
   }
   .social__button{
-    width: 100px;
-    height: 100px;
-    font-size: 40px;
-    left: 37vw;
+    left: 40vw;
+    width: 20vw;
+    height: 20vw;
+    font-size: 6vw;
   }
   .left__image2,
   .right__image2{
@@ -1199,8 +1259,6 @@ SCALING
   }
   .language--img{
     padding-top: 2vh;
-    width: 75px;
-    height: auto;
   }
   .side__div{
     padding-top: 2vh;
@@ -1273,35 +1331,51 @@ SCALING
     left: 0;
     padding-left: 25px;
   }
-      .language__section,
-    .technology__section{
-      padding-top: 5vh;
-    }
-    .left__container,
-    .right__container{
-      box-shadow: none;
-      border-radius: 0%;
-    }
-    .dark-theme .left__container, 
-    .dark-theme .right__container{
-      background-color: #242424;
-    }
-    .dark-theme .language__image--wrapper{
-      background-color: white;
-      border-radius: 35%;
-    }
-    .language__name{
-      font-size: 12px;
-      color: #fff;
-    }
-    .language__stack--header,
-    .tech__stack--header{
-      color: #fff;
-    }
-    .java__script--icon{
-      width: 70px;
-      height: 68px;
-    }
+}
+@media(max-width: 985px){
+  .languages{
+    margin: auto;
+  }
+  .language__section,
+  .technology__section{
+    padding-top: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .left__container,
+  .right__container{
+    box-shadow: none;
+    border-radius: 0%;
+  }
+  .dark-theme .left__container, 
+  .dark-theme .right__container{
+    background-color: #242424;
+  }
+  .dark-theme .language__image--wrapper{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .language--img{
+    width: 5vw;
+    height: 5vh;
+  }
+  .language__name{
+    font-size: 12px;
+    color: #fff;
+  }
+  .language__stack--header,
+  .tech__stack--header{
+    color: #fff;
+  }
+  .tech__paragraph,
+  .lang__paragraph{
+    display: none;
+  }
 }
 
     @media(max-width: 1050px){
@@ -1346,6 +1420,20 @@ SCALING
         padding-left: 25px;
       }
 
+    }
+    @media(max-width: 1175px){
+        .left__container,
+        .right__container{
+          position: static;
+          padding-bottom: 20px;
+        }
+        .languages{
+          display: flex;
+          max-width: 50vw;
+          margin: auto;
+          justify-content: space-evenly;
+          flex-direction: column-reverse;
+        }
     }
 
 
