@@ -36,7 +36,7 @@ const Socials = () => {
                 <i><FontAwesomeIcon icon={['fab','github']} className="icon"/></i>
             </button>
             </a>
-            <a href="https://app.joinhandshake.com/users/23219433" target="_blank">
+            <a href="https://handshake.com/users/23219433" target="_blank">
             <button className="social__button handshake">
                 <i><FontAwesomeIcon icon={['fas', 'handshake']} className="icon"/></i>
             </button>

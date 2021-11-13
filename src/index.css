@@ -44,8 +44,9 @@ NAV BAR
 .nav{
   display: flex;
   justify-content: space-between;
-  position: fixed;
-  width: 100vw;
+  position: relative;
+  top: 0;
+  left: 0;
   z-index: 100;
 }
 .dark-theme .logo__image{
@@ -923,21 +924,21 @@ SCALING
   }
   .left__container{
     position: relative;
-    top: 0;
-    left: 0;
     width: 100%;
+    top: 1;
+    left: 0;
   }
   .right__container{
     position: relative;
+    width: 100%;
     top: 0;
     left: 0;
-    width: 100%;
   }
   .right__image{
     opacity: 0;
   }
   .left__image{
-    left: 5vw;
+    opacity: 0;
   }
 }
 @media(max-width: 930px){
@@ -1106,6 +1107,7 @@ SCALING
       top: 30vh;
       left: 25vw;
     }
+    
 }
 @media( max-width: 2000px){
   .left__image{
@@ -1206,6 +1208,36 @@ SCALING
   .side__div{
     padding-top: 2vh;
   }
+  .languages{
+    display: flex;
+    justify-content: center;
+  }
+  .left__container,
+  .right__container{
+    position: fixed;
+  }
+  .left__container{
+    top: 50vh;
+  }
+  .right__container{
+    top: 10vh;
+  }
+  .languages{
+    max-width: 100vw;
+  }
+  .App{
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+  .text__img--wrapper{
+    position: fixed;
+  }
+  .left__container{
+    left: 4vw;
+  }
+  .right__container{
+    left: 4vw;
+  }
 }
 
 
@@ -1226,16 +1258,23 @@ DARK THEME
 }
 .dark-theme .App{
   background-color: #242424;
-    position:fixed;
-    width:100%;
-    height: 100%;
-    top:0px;
-    left:0px;
-    z-index:-1000;
-    overflow: auto;
+  position:fixed;
+  width:100%;
+  height: 100%;
+  top:0px;
+  left:0px;
+  z-index:-1000;
+  overflow: auto;
 }
 .App{
-  transition: all 550ms ease;
+  position:fixed;
+  width:100%;
+  height: 100%;
+  top:0px;
+  left:0px;
+  z-index:-1000;
+  overflow: auto;
+  transition: all 350ms ease;
 }
 .dark-theme #personal-logo{
     filter: none;
