@@ -254,9 +254,6 @@ PROJECTS
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* position: absolute;
-  height: auto;
-  left: 25vw; */
 }
 .section__title{
   text-align:center;
@@ -935,10 +932,10 @@ SCALING
     left: 0;
   }
   .right__image{
-    opacity: 0;
+    display: none;
   }
   .left__image{
-    opacity: 0;
+    display: none;
   }
 }
 @media(max-width: 930px){
@@ -1046,7 +1043,7 @@ SCALING
 
 @media (max-width: 480px){
     .right__image2{
-      opacity: 0;
+      display: none;
     }
     .social__container{
       width: 100%;
@@ -1060,14 +1057,14 @@ SCALING
 @media (max-width: 570px){
   .tech__paragraph,
   .lang__paragraph{
-    opacity: 0;
+    display: none;
   }
   .language--img{
     width: 100px;
   }
   .language__name{
     font-size: 30px;
-    bottom: -40px;
+    bottom: -15px;
   }
   .language__section,
   .technology__section{
@@ -1083,7 +1080,7 @@ SCALING
     .left__image2,
     .pillar,
     .right__image2{
-      opacity: 0;
+      display: none;
     }
     .social__button{
       width: 150px;
@@ -1140,7 +1137,7 @@ SCALING
     font-size: 12px;
   }
   .background__event{
-    opacity: 0;
+    display: none;
   }
   .landing__logo--img{
     width: 150px;
@@ -1186,7 +1183,7 @@ SCALING
   }
   .left__image2,
   .right__image2{
-    opacity: 0;
+    display: none;
   }
   .left__container,
   .right__container{
@@ -1238,8 +1235,57 @@ SCALING
   .right__container{
     left: 4vw;
   }
+  .project__description--para{
+    display: none;
+  }
+  .project__description--title{
+    font-size: 12px;
+  }
+  .project__description--sub-title{
+    font-size: 10px;
+  }
+  .project__description--link{
+    font-size: 10px;
+  }
+  .project__description{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    left: 0;
+    padding-left: 25px;
+  }
 }
-
+@media(max-width: 380px){
+    .language__section,
+    .technology__section{
+      padding-top: 5vh;
+    }
+    .left__container,
+    .right__container{
+      box-shadow: none;
+      border-radius: 0%;
+    }
+    .dark-theme .left__container, 
+    .dark-theme .right__container{
+      background-color: #242424;
+    }
+    .dark-theme .language__image--wrapper{
+      background-color: white;
+      border-radius: 35%;
+    }
+    .language__name{
+      font-size: 12px;
+      color: #fff;
+    }
+    .language__stack--header,
+    .tech__stack--header{
+      color: #fff;
+    }
+}
+.java__script--icon{
+  width: 70px;
+  height: 68px;
+}
 
 
 /*

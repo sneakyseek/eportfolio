@@ -21,20 +21,28 @@ const Languages = () => {
         </div>
         <div className="language__section">
                 <figure class="language__section--language">
+                    <div className="language__image--wrapper">
                     <img class="language--img" src="https://www.w3.org/html/logo/downloads/HTML5_Badge_128.png" alt=""></img>
+                    </div>
                     <span class="language__name">HTML</span>
                 </figure>
                 <figure class="language__section--language">
+                    <div className="language__image--wrapper">
                     <img class="language--img" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png" alt=""></img>
+                    </div>
                     <span class="language__name">CSS</span>
                 </figure>
                 <figure class="language__section--language">
-                    <img class="language--img" src="https://iconape.com/wp-content/files/ez/353342/svg/javascript-seeklogo.com.svg" alt=""></img>
+                    <div className="language__image--wrapper">
+                    <img class="language--img java__script--icon" src="https://iconape.com/wp-content/files/ez/353342/svg/javascript-seeklogo.com.svg" alt=""></img>
+                    </div>
                     <span class="language__name">JavaScript</span>
                 </figure>
                 <figure class="language__section--language">
+                    <div className="language__image--wrapper">
                     <img class="language--img" src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-256.png" alt=""></img>
                     <span class="language__name">React</span>
+                    </div>
                 </figure>
         </div>
         <div className="technology__para">
@@ -54,11 +62,15 @@ const Languages = () => {
             </div>
             <div class="technology__section">
                 <figure class="language__section--language">
+                    <div className="language__image--wrapper">
                     <img class="language--img" src="https://cdn0.iconfinder.com/data/icons/flat-round-system/512/java-256.png" alt=""></img>
+                    </div>
                     <span class="language__name">Java</span>
                 </figure>
                 <figure class="language__section--language">
+                    <div className="language__image--wrapper">
                     <img class="language--img" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-256.png" alt=""></img>
+                    </div>
                     <span class="language__name">Python</span>
                 </figure>
             </div>
