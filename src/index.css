@@ -213,23 +213,28 @@ LANDING PAGE
   padding-left: 5vw;
 }
 .social__list{
-  padding-top: 20px;
+  padding-top: 30px;
+  display:  flex;
+  flex-direction: row;
 }
 .social__link{
   background-color: #804EAD;
   color: white;
-  padding: 6px;
-  width: 50px;
-  height: 50px;
-  font-size: 16px;
-  margin-right: 12px;
+  width: 11vw;
+  height: 4vh;
+  font-size: 0.75vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  border-radius: 20%;
   animation: fade-up 650ms 950ms backwards;
+  padding-left: 10px;
 }
-
+.resume__tag{
+  font-size: 0.75vw;
+  padding-left: 20px;
+  padding-right: 10px;
+}
 
 
 
@@ -1080,11 +1085,6 @@ SCALING
   .landing__paragraph{
     font-size: 20px;
   }
-  .social__link{
-    width: 25px;
-    height: 25px;
-    font-size: 10px;
-  }
 }
 
 @media (max-width: 480px){
@@ -1294,9 +1294,6 @@ SCALING
   .side__div{
     padding-top: 2vh;
   }
-  .text__img--wrapper{
-    position: fixed;
-  }
   .left__container{
     left: 4vw;
   }
@@ -1420,6 +1417,13 @@ SCALING
         .tech__paragraph{
           font-size: 1vw;
         }
+        .file__icon{
+          display: none;
+        }
+        .resume__tag{
+          padding-left: 0;
+          font-size: 1.25vw;
+        }
     }
 
 
@@ -1434,7 +1438,8 @@ DARK THEME
 .dark-theme .fa-adjust,
 .dark-theme .social__header, 
 .dark-theme .navigation__link,
-.dark-theme .nav__link--anchor{
+.dark-theme .nav__link--anchor,
+.dark-theme .resume__tag{
     color: #fff;
 }
 .dark-theme .App{

@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react"
 import personalLogo from '../assets/logopfp.jfif'
 import BackgroundEvent from "../components/BackgroundEvent.jsx";
-import resume from "../assets/Official Resume Brian Hays.pdf"
+import resume from "../assets/Brian Hays Resume VT.pdf"
 import profilePicture from "../assets/photOfMeReact2.jpg";
 import Contact from "../components/Contact.jsx"
 
@@ -43,9 +43,14 @@ const Landing = () => {
                  {/* <span className="purple click" onClick={() => Contact.toggleModal()}> about me</span> */}
                 </p>
                 <div className="social__list">
-                <a href={resume} class="social__link click" target="_blank">
-                    <FontAwesomeIcon icon="file-pdf"></FontAwesomeIcon>
-                </a>
+                    <a href={resume} class="social__link click" target="_blank">
+                        <FontAwesomeIcon icon="file-pdf" className="file__icon">
+
+                        </FontAwesomeIcon>
+                        <h1 className="resume__tag">
+                            My Resume
+                        </h1>
+                    </a>
                 </div>
                 </div>
             </figure>                
