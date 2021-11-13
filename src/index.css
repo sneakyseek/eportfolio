@@ -1298,6 +1298,10 @@ SCALING
     .tech__stack--header{
       color: #fff;
     }
+    .java__script--icon{
+      width: 70px;
+      height: 68px;
+    }
 }
 
     @media(max-width: 1050px){
@@ -1343,10 +1347,6 @@ SCALING
       }
 
     }
-.java__script--icon{
-  width: 70px;
-  height: 68px;
-}
 
 
 /*
