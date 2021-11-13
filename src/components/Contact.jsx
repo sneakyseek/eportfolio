@@ -18,6 +18,9 @@ const Contact = () => {
         isModalOpen = true;
         document.body.classList += " modal--open";
     }
+    function exitModal(){
+        document.body.classList.remove("modal--open");
+    }
     function contact(e){
         e.preventDefault()
         const loading = document.querySelector('.modal__overlay--loading');
@@ -88,7 +91,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className="modal__half modal__contact">
-                <FontAwesomeIcon icon='times' className="modal__exit click " onClick={() => toggleModal()}/>
+                <FontAwesomeIcon icon='times' className="modal__exit click " onClick={() => exitModal()}/>
                 <h3 className="modal__title modal__title--contact">
                     Let's have a chat!
                 </h3>
@@ -134,6 +137,7 @@ export const toggleModal = () =>{
         isModalOpen = false;
         return document.body.classList.remove("modal--open");
     }
+    
     isModalOpen = true;
     document.body.classList += " modal--open";
 }
