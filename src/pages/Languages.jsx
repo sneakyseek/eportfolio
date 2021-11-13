@@ -41,8 +41,8 @@ const Languages = () => {
                 <figure class="language__section--language">
                     <div className="language__image--wrapper">
                     <img class="language--img" src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-256.png" alt=""></img>
-                    <span class="language__name">React</span>
                     </div>
+                    <span class="language__name">React</span>
                 </figure>
         </div>
         <div className="technology__para">
