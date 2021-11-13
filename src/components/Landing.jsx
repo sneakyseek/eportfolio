@@ -4,7 +4,7 @@ import personalLogo from '../assets/logopfp.jfif'
 import BackgroundEvent from "../components/BackgroundEvent.jsx";
 import resume from "../assets/Brian Hays Resume VT.pdf"
 import profilePicture from "../assets/photOfMeReact2.jpg";
-import Contact from "../components/Contact.jsx"
+import { toggleModal } from "./Contact";
 
 const Landing = () => {
 
@@ -39,8 +39,8 @@ const Landing = () => {
                 <p className="landing__paragraph">
                 My name is Brian Hays. I am a Junior at <span className="purple">Virginia Tech</span> studying Computer Science.
                 In my spare time, I <span className="purple">freelance</span> and study as a <span className="purple">frontend developer. </span> 
-                I enjoy creating aesthetic, performant, and <span className="purple">enjoyable experiences</span> for users. {/*Find out more
-                 {/* <span className="purple click" onClick={() => Contact.toggleModal()}> about me</span> */}
+                I enjoy creating aesthetic, performant, and <span className="purple">enjoyable experiences</span> for users. Find out more
+                <span className="purple click about__me--btn" onClick={() => toggleModal()}> about me</span>
                 </p>
                 <div className="social__list">
                     <a href={resume} class="social__link click" target="_blank">

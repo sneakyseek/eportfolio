@@ -235,6 +235,12 @@ LANDING PAGE
   padding-left: 20px;
   padding-right: 10px;
 }
+.about__me--btn:hover{
+  font-size: 30px;
+}
+.about__me--btn{
+  transition: all 350ms ease;
+}
 
 
 

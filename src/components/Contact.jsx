@@ -126,3 +126,14 @@ const Contact = () => {
 }
 
 export default Contact
+export const toggleModal = () =>{
+    
+    let isModalOpen = false;
+    
+    if(isModalOpen){
+        isModalOpen = false;
+        return document.body.classList.remove("modal--open");
+    }
+    isModalOpen = true;
+    document.body.classList += " modal--open";
+}
