@@ -23,6 +23,7 @@ const Landing = () => {
             return "Evening"
         }
     }
+
     return (
         <>
         <BackgroundEvent/>
@@ -39,7 +40,7 @@ const Landing = () => {
                 <p className="landing__paragraph">
                 My name is Brian Hays. I am a Junior at <span className="purple">Virginia Tech</span> studying Computer Science.
                 In my spare time, I <span className="purple">freelance</span> and study as a <span className="purple">frontend developer. </span> 
-                I enjoy creating aesthetic, performant, and <span className="purple">enjoyable experiences</span> for users. Find out more
+                I enjoy creating aesthetic, performant, and <span className="purple">enjoyable website experiences</span> for users. Find out more
 
                 <span className="purple click about__me--btn" onClick={() => toggleModal()}>
                 <FontAwesomeIcon icon="arrow-right" className="left__arrow--icon">

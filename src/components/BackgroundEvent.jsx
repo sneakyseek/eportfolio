@@ -23,6 +23,7 @@ const BackgroundEvent = () => {
 
 
     return (
+        
         <div className="background__event">
             <img src={backgroundImage} alt="" className="background__ball ball--0" />
             <img src={backgroundTriangle} alt="" className="background__ball ball--1" />
