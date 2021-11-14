@@ -57,12 +57,11 @@ const Contact = () => {
                 <p className="modal__para">
                     I'm a 19 year-old <b className="secondary__color">frontend software engineer </b>
                     with a strong passion for developing asesthetic and performant websites that provide <b className="secondary__color">
-                    <br/>
                     wonderful user experiences.</b>
                     <br/><br/>
                     I currently work on creating more <b className="secondary__color">advanced implementations</b> of the frontend skills I have fostered, as
                     I learn alongside a group of equally <b className="secondary__color">talented</b> and <b className="secondary__color">experienced </b>
-                    freelance frontend engineers, as I study <br/> <b className="secondary__color">Computer Science</b> at Virginia Tech
+                    top tech frontend engineers, as I study <b className="secondary__color">Computer Science</b> at Virginia Tech
                 </p>
                 <div className="modal__languages">
                     <figure className="modal__language">
