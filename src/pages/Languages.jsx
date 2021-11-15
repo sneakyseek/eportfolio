@@ -3,6 +3,7 @@ import leftImage from '../assets/undraw_lost_online_re_upmy.svg'
 import rightImage from '../assets/undraw_design_notes_re_eklr.svg'
 import BackgroundEvent from "../components/BackgroundEvent.jsx";
 import {Helmet} from 'react-helmet';
+import jsLogo from "../assets/js__logo.png"
 const Languages = () => {
     return (
         
@@ -34,7 +35,7 @@ const Languages = () => {
                     </figure>
                     <figure class="language__section--language">
                         <div className="language__image--wrapper">
-                        <img class="language--img java__script--icon" src="https://iconape.com/wp-content/files/ez/353342/svg/javascript-seeklogo.com.svg" alt=""></img>
+                        <img class="language--img java__script--icon" src={jsLogo} alt=""></img>
                         </div>
                         <span class="language__name">JavaScript</span>
                     </figure>
