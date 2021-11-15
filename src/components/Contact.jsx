@@ -3,6 +3,7 @@ import React from 'react'
 import emailjs from 'emailjs-com'
 import '../index.css';
 import{ init } from 'emailjs-com';
+import jsLogo from "../assets/js__logo.png"
 init("user_ahHZXKD3eVXplfTn7LCAZ");
 
 const Contact = () => {
@@ -73,7 +74,7 @@ const Contact = () => {
                         <span className="language__name">CSS</span>
                     </figure>
                     <figure className="modal__language">
-                        <img className="modal__language--img" src="https://iconape.com/wp-content/files/ez/353342/svg/javascript-seeklogo.com.svg" alt=""></img>
+                        <img className="modal__language--img" src={jsLogo} alt=""></img>
                         <span className="language__name">JavaScript</span>
                     </figure>
                     <figure className="modal__language">
