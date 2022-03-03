@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react"
 import personalLogo from '../assets/logopfp.jfif'
 import BackgroundEvent from "../components/BackgroundEvent.jsx";
-import resume from "../assets/Brian Hays Resume Final.pdf"
+import resume from "../assets/Brian Hays Heroku Resume.pdf"
 import profilePicture from "../assets/photOfMeReact2.jpg";
 import { toggleModal } from "./Contact";
 
